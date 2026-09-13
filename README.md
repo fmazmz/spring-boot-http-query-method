@@ -38,3 +38,8 @@ A client can now filter for orders using the `OrderQuery` as the request body in
   }
 }
 ```
+
+```shell
+curl -X QUERY http://localhost:8080/api/v1/orders \
+  --json '{"customer":"John Smith","statuses":["OPEN","PAID"],"minTotal":40,"shipping":{"country":"SE"}}'
+```
