@@ -43,3 +43,8 @@ A client can now filter for orders using the `OrderQuery` as the request body in
 curl -X QUERY http://localhost:8080/api/v1/orders \
   --json '{"customer":"John Smith","statuses":["OPEN","PAID"],"minTotal":40,"shipping":{"country":"SE"}}'
 ```
+
+## Requirements
+
+- JDK 25+
+- Spring Boot **4.2.0-SNAPSHOT** (Spring Framework 7.1, adds `RequestMethod.QUERY`)
